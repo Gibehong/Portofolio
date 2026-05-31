@@ -10,12 +10,12 @@
 
 // ShowPopUp();
 
-const res = document.querySelector(".ress");
-const btn = document.querySelector(".btn");
+// const res = document.querySelector(".ress");
+// const btn = document.querySelector(".btn");
 
-btn.addEventListener("click", function () {
-  res.innerHTML = "<h1>halo</h1>";
-});
+// btn.addEventListener("click", function () {
+//   res.innerHTML = "<h1>halo</h1>";
+// });
 
 // btn.addEventListener("click", function () {
 //   alert("Hello Partner");
@@ -27,11 +27,11 @@ btn.addEventListener("click", function () {
 //   res.innerHTML = <h1>halo</h1>;
 // }
 
-function hitung(a, b, c) {
-  let HasilAwal = a + b;
-  let HasilAkhir = HasilAwal - c;
-  return HasilAkhir; //Mengembalikan nilai, dimunculkan
-}
+// function hitung(a, b, c) {
+//   let HasilAwal = a + b;
+//   let HasilAkhir = HasilAwal - c;
+//   return HasilAkhir; //Mengembalikan nilai, dimunculkan
+// }
 
 // res.textContent = hitung(
 //   prompt("Enter a number: "),
@@ -43,11 +43,28 @@ function hitung(a, b, c) {
 // console.log(buah[0]);
 // console.log(buah.length);
 
-let DataOrang = ["Hello", "Gibe", "World"];
-DataOrang.push("Mem"); //Kasih masuk data ke Array
-DataOrang.sort(); //Mengatur dari A-Z (Sesuai alfabet)
-console.log(DataOrang);
+// let DataOrang = ["Hello", "Gibe", "World"];
+// DataOrang.push("Mem"); //Kasih masuk data ke Array
+// DataOrang.sort(); //Mengatur dari A-Z (Sesuai alfabet)
+// console.log(DataOrang);
 
-let AngkaOrang = [2, 5, 7, 3, 4];
-AngkaOrang.sort((a) => a - 1); // a adalah semua array itu (?)
-console.log(AngkaOrang);
+// let AngkaOrang = [2, 5, 7, 3, 4];
+// AngkaOrang.sort((a) => a - 1); // a adalah semua array itu (?)
+// console.log(AngkaOrang);
+
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+});
+
+topBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
