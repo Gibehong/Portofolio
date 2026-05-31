@@ -1,0 +1,36 @@
+.navbar {
+  display: flex;
+  /* Flex untuk kasih kiri ke kanan, bukan atas ke bawah */
+  align-items: center;
+  /* Kasih setara semua */
+  justify-content: space-between;
+  /* background-color: seashell; Contoh */
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+}
+
+.container-nav a {
+  /* Mencari yang ada didalam nav itu ada <a> dan apa yang mau dibikin*/
+  text-decoration: none;
+  color: slateblue;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Untuk Bagian Section */
+.Home {
+  /* Bisa pakai # untuk panggil id tetapi berat untuk website nya (Tidak efektif), jadi lebih baik pakai class */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
